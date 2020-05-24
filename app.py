@@ -13,6 +13,8 @@ def index():
         post = request.form.get('post')
         create_post(name, post)
 
+    posts = get_posts()
+
 
     return render_template('index.html')
 
